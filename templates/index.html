@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number Guessing Game</title>
+</head>
+<body style="text-align: center; font-family: Arial;">
+    <h1>🎲 Guess the Number (1–100)</h1>
+
+    <form method="POST">
+        <input type="number" name="guess" placeholder="Enter your guess" required>
+        <button type="submit">Guess</button>
+    </form>
+
+    {% if message %}
+        <p style="font-size: 18px; color: #333;">{{ message }}</p>
+    {% endif %}
+</body>
+</html>
